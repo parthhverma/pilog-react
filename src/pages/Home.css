@@ -1,0 +1,28 @@
+.hero { padding: 5rem 0 4rem; border-bottom: 1px solid var(--border); margin-bottom: 4rem; position: relative; animation: fadeUp 0.6s ease both; }
+.hero-label { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--pi); margin-bottom: 1.5rem; }
+.hero-title { font-family: var(--font-serif); font-size: clamp(3rem, 7vw, 5.5rem); font-weight: 400; line-height: 1.05; letter-spacing: -0.02em; margin-bottom: 1.5rem; }
+.hero-title em { color: var(--accent); font-style: italic; }
+.hero-sub { max-width: 520px; color: var(--text-soft); font-size: 1.05rem; line-height: 1.75; }
+.hero-bar { position: absolute; bottom: -1px; left: 0; width: 80px; height: 2px; background: var(--pi); }
+
+.posts-section { animation: fadeUp 0.6s ease 0.15s both; }
+.posts-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 2.5rem; }
+.section-label { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-muted); }
+.post-count { font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-muted); }
+
+.posts-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1.5px; background: var(--border); border: 1px solid var(--border); }
+.post-card { background: var(--bg); padding: 2rem; transition: background 0.2s; animation: fadeUp 0.5s ease both; }
+.post-card:hover { background: var(--bg2); }
+.post-card-top { display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; }
+.post-tag { font-family: var(--font-mono); font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--pi); border: 1px solid var(--pi); padding: 0.15rem 0.5rem; border-radius: 2px; }
+.post-date { font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-muted); }
+.post-card-title { font-family: var(--font-serif); font-size: 1.3rem; font-weight: 700; line-height: 1.25; margin-bottom: 0.75rem; }
+.post-card-title a:hover { color: var(--accent); }
+.post-card-excerpt { font-size: 0.9rem; color: var(--text-soft); line-height: 1.7; margin-bottom: 1.25rem; }
+.post-card-link { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.06em; color: var(--accent); }
+.post-card-link:hover { text-decoration: underline; }
+
+.empty-state { padding: 4rem 2rem; text-align: center; border: 1px dashed var(--border); color: var(--text-muted); }
+.empty-state a { color: var(--accent); }
+
+@media (max-width: 600px) { .posts-grid { grid-template-columns: 1fr; } }
